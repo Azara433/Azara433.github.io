@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism IA </title> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+      <div class="logo-container">
+        <img src="logo.jpg" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="dimg"></div>
+
+  
+  <div class="store">
+    
+    <div class="categories-container">
+      <div class="categories">
+        <button onclick="filterBooks('all')">All</button>
+        <button onclick="filterBooks('hotels')">Hotels</button>
+        <button onclick="filterBooks('markets')">Markets</button>
+        <button onclick="filterBooks('hospitals')">Hospitals</button>
+        <button onclick="filterBooks('restaurants')">Restaurants</button>
+      </div>
+    </div>
+
+    <!--Section 1 - Hotels, malls, resorts and Creeks:-->
+    <div class=" card-container" id="bookCards">
+      <div class="card" data-category="hotels"
+      data-name="West Central Mall" 
+      data-location="Track 4-6 Groenveldt, Leonora, West Coast Demerara, Guyana" 
+      data-contact="+592 644 4170"  
+      data-description="West Central Mall offers many services for its patrons, ranging from a wide variety of stores, a movie theatre, a fine dining experience with Atlantic cuisine, and a nightlife scene at ACE club. With so many different attractions in one place, West Central Mall is a popular social spot." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5888.01437519538!2d-58.28615358172714!3d6.866946857189629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe1002e3f6661%3A0x6a6baf47edb29742!2sWest%20Central%20Mall!5e0!3m2!1sen!2sgy!4v1738328469558!5m2!1sen!2sgy">
+        <img src="https://i0.wp.com/www.inewsguyana.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-29-at-8.45.07-PM.jpeg?resize=1024%2C684&ssl=1" alt="West Central Mall">
+        <div class="card-content">
+          <h3>West Central Mall</h3>
+          <p>West Central Mall offers many services for its patrons, ranging from a wide variety of stores, a movie theatre, a fine dining experience with Atlantic cuisine, and a nightlife scene at ACE club. With so many different attractions in one place, West Central Mall is a popular social spot.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hotels"
+      data-name="Aracari Resort" 
+      data-location="160 Plantation Versailles, Vreed en Hoop, Guyana" 
+      data-contact="+592 264 2946" 
+      data-description="Aracari is a combination hotel and resort that is another extremely popular tourist spot on the West Coast. The sprawling resort features a pool and jacuzzi, as well as a restaurant, a bar, and a fitness center. Moreover, there are four different room options for visitors to choose from, ensuring that there’s something for everyone. Reservations can be made via their website." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.8121945076064!2d-58.190870425518!3d6.792692519977644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafeff56e125a9b%3A0xbafc540ad6405427!2sThe%20Aracari%20Resort!5e0!3m2!1sen!2sgy!4v1738639171582!5m2!1sen!2sgy">
+        <img src="https://images.trvl-media.com/lodging/13000000/12660000/12654300/12654222/c76a2ed4.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill " alt="Aracari Resort ">
+        <div class="card-content">
+          <h3>Aracari Resort</h3>
+          <p>Aracari is a combination hotel and resort that is another extremely popular tourist spot on the West Coast. The sprawling resort features a pool and jacuzzi, as well as a restaurant, a bar, and a fitness center. Moreover, there are four different room options for visitors to choose from, ensuring that there’s something for everyone. Reservations can be made via their website.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hotels"
+      data-name="Arrowpoint Nature Resort" 
+      data-location="Santa Mission, Guyana" 
+      data-contact="+592 225 9648" 
+      data-description="Arrowpoint is a prime eco-tourism location in Guyana. Visitors are housed in thatched roof cabins, each with electricity and ensuite bathrooms. Arrowpoint is a great location for those who want to enjoy the nature of Guyana - many species of birds can be spotted there, and most tour options also include hiking and nature walks. The resort is also located near a creek, so visitors can enjoy swimming and kayaking. Tours and accommodations here can be booked through the Roraima Airways website, or their Facebook page." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.614259682569!2d-58.370377!3d6.570272000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8da554aca043dbe7%3A0xeef6d66cdb639ee7!2sArrowpoint%20Nature%20Resort!5e0!3m2!1sen!2sgy!4v1738639725214!5m2!1sen!2sgy">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/10/d3/49/relaxing-at-arrowpoint.jpg?w=1200&h=-1&s=1">    
+        <div class="card-content">
+          <h3>Arrowpoint Nature Resort</h3>
+          <p>Arrowpoint is a prime eco-tourism location in Guyana. Visitors are housed in thatched roof cabins, each with electricity and ensuite bathrooms. Arrowpoint is a great location for those who want to enjoy the nature of Guyana - many species of birds can be spotted there, and most tour options also include hiking and nature walks. The resort is also located near a creek, so visitors can enjoy swimming and kayaking. Tours and accommodations here can be booked through the Roraima Airways website, or their Facebook page.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hotels"
+      data-name="Inner Retreat Hotel Parika Resort Inn" 
+      data-location="Retreat Road, Parika, Guyana" 
+      data-contact="+592 260 4504" 
+      data-description="Inner Retreat Hotel offers reasonable prices for comfortable rooms, a bar and even they also provide fireside-cooked meals. Reservations can be made via their Facebook page or their phone number." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.266183451388!2d-58.42069772551758!3d6.858666919178766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01c2d460a4b93%3A0xbb9cc4d7d625b374!2sInner%20Retreat%20Hotel%20Parika%20Inn%20Resort!5e0!3m2!1sen!2sgy!4v1738639961510!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipONo-Qcqet3uQXboin8BaEign5m0WLJuRSPYulk=w408-h302-k-no" alt="Inner Retreat Hotel Parika Resort Inn">
+        <div class="card-content">
+          <h3>Inner Retreat Hotel Parika Resort Inn</h3>
+          <p>Inner Retreat Hotel offers reasonable prices for comfortable rooms, a bar and even they also provide fireside-cooked meals. Reservations can be made via their Facebook page or their phone number.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hotels"
+      data-name="Comfort Inn Apartments and Rooms" 
+      data-location="15 Bushy Par, Parika, Guyana" 
+      data-contact="+592 260 4611" 
+      data-description="Comfort Inn provides accommodation for both long and short term stays, including apartments for rent. Reservations can be made via their phone number or Facebook - their Facebook account also provides an email and WhatsApp number." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.23264721638!2d-58.41956112551756!3d6.8626985191297285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01d079485ac33%3A0x467d7c8031ee49c8!2sComfort%20Inn%20Apartments%20and%20Rooms!5e0!3m2!1sen!2sgy!4v1738640015781!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipPYgJ3Z33ICUzNRbWvZK12leLgY6-zesqj9wIPD=w750-h606-p-k-no" alt="Comfort Inn Apartments and Rooms">
+        <div class="card-content">
+          <h3>Comfort Inn Apartments and Rooms</h3>
+          <p>Comfort Inn provides accommodation for both long and short term stays, including apartments for rent. Reservations can be made via their phone number or Facebook - their Facebook account also provides an email and WhatsApp number.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hotels"
+      data-name="Beach View Hotel" 
+      data-location="Lot 7 Bushy Park Public Road, Parika, Guyana" 
+      data-contact="+592 260 4880" 
+      data-description="Experience comfort and relaxation at Beach View Hotel, featuring modern amenities and warm hospitality. Conveniently located within walking distance of Bushy Park Beach, it’s the perfect getaway for travelers." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.208793272676!2d-58.41811181694946!3d6.86556471650715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01dcaa250075d%3A0x3f547ec6d305e8ea!2sBeach%20View%20Hotel!5e0!3m2!1sen!2sgy!4v1738763464541!5m2!1sen!2sgy">
+        <img src="https://guyanasouthamerica.gy/wp-content/uploads/2024/01/beach-view-hotel-20-1024x768.jpg" alt="Beach View Hotel">
+        <div class="card-content">
+          <h3>Beach View Hotel</h3>
+          <p>Experience comfort and relaxation at Beach View Hotel, featuring modern amenities and warm hospitality. Conveniently located within walking distance of Bushy Park Beach, it’s the perfect getaway for travelers.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+
+      <!--Section 2- Markets and supermarkets:-->
+
+      <div class="card" data-category="markets"
+      data-name="Salima’s Meat Centre" 
+      data-location="1 Hague Front, West Coast, Guyana" 
+      data-contact="+592 276 3328" 
+      data-description="Salima’s Meat Centre provides consumer with fresh halal meat and is open daily." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5202.062043671073!2d-58.267476854158616!3d6.86196267999276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe6a45ac974bd%3A0x3d5541009916c5de!2sSalima&#39;s%20Meat%20Centre!5e0!3m2!1sen!2sgy!4v1738338657963!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipOqSXGQ8VyQNhcFhPDJG0xf4c1ugk3RLsCwsTlQ=w408-h408-k-no" alt="Salima’s Meat Centre">
+        <div class="card-content">
+          <h3>Salima’s Meat Centre</h3>
+          <p>Salima’s Meat Centre provides consumer with fresh halal meat and is open daily.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="markets"
+      data-name="V&J Supermarket" 
+      data-location="171 Parika Junction, Guyana" 
+      data-contact="+592 260 4038 or +592 617 1181" 
+      data-description="V & J Supermarkete offers great prices, friendly service, and a convenient shopping experience for all your needs. More information can be found on their Facebook page, which is updated regularly." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.24757857018!2d-58.42652562551767!3d6.860903819151561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01df61314df17%3A0xd14e37849ba101ae!2sV%20%26%20J%20Supermarket!5e0!3m2!1sen!2sgy!4v1738338694161!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipN5j54qDhTI5fySyB_Erzx9C-Zqul6VQ6aYCDdQ=w408-h306-k-no" alt="V&J Supermarket">
+        <div class="card-content">
+          <h3>V&J Supermarket</h3>
+          <p>V & J Supermarkete offers great prices, friendly service, and a convenient shopping experience for all your needs. More information can be found on their Facebook page, which is updated regularly.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>   
+
+      <div class="card" data-category="markets"
+      data-name="Massy Stores Mini" 
+      data-location="Lot 133 South New Road, Vreed en Hoop, Guyana" 
+      data-contact="+592 254-2177 or +592 254-2178" 
+      data-description="A trusted name in retail, Massy Stores Mini brings a compact yet fully stocked supermarket experience. Enjoy their range of high quality groceries." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63386.79861911587!2d-58.196730699999996!3d6.809340000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dbb35782637483f%3A0xcd68dc846922918!2sMassy%20Stores%20Mini!5e0!3m2!1sen!2sgy!4v1738339114815!5m2!1sen!2sgy">
+        <img src="https://newsroom.gy/wp-content/uploads/2021/09/STORE.png" alt="Massy Stores Mini">
+        <div class="card-content">
+          <h3>Massy Stores Mini</h3>
+          <p>A trusted name in retail, Massy Stores Mini brings a compact yet fully stocked supermarket experience. Enjoy their range of high quality groceries.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="markets"
+      data-name="R. Tularam Supermarket" 
+      data-location="10 Malgre Tout, West Bank Demerara, Guyana" 
+      data-contact="+592 264 0132" 
+      data-description="Providing a wide range of groceries, fresh fruits, vegetables, and household products, R. Tularam Supermarket is known for its affordability and customer satisfaction." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.798599680138!2d-58.18832612551802!3d6.794342919957736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafef8b2d872cf5%3A0x438ec8aae8cdc9f!2sR.%20Tularam%20Supermarket!5e0!3m2!1sen!2sgy!4v1738339158670!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipNmqcMdP4Emup1b1lwzEAnp-qmbSyeHFInhOp8J=w408-h306-k-no" alt="R. Tularam Supermarket">
+        <div class="card-content">
+          <h3>R. Tularam Supermarket</h3>
+          <p>Providing a wide range of groceries, fresh fruits, vegetables, and household products, R. Tularam Supermarket is known for its affordability and customer satisfaction.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="markets"
+      data-name="Sahadeo Sons and Groceries" 
+      data-location="88 Independence St, Demerara, Guyana" 
+      data-contact="+592 622 2910" 
+      data-description="Sahadeo Sons and Groceries is a locally owned grocery store offering fresh produce, pantry staples, and household essentials at competitive prices." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.979141019376!2d-58.2158757255181!3d6.77239272022205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8daffb372db28217%3A0x6e6b1a0f9d999072!2sSahadeo%20and%20Sons%20Grocery%20Store!5e0!3m2!1sen!2sgy!4v1738339189775!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipOh_h0zWrnx7ZpD68uIJ60Xxr22P96Goyllly2_=w426-h240-k-no" alt="Sahadeo Sons and Groceries">
+        <div class="card-content">
+          <h3>Sahadeo Sons and Groceries</h3>
+          <p>Sahadeo Sons and Groceries is a locally owned grocery store offering fresh produce, pantry staples, and household essentials at competitive prices.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="markets"
+      data-name="Parika Market" 
+      data-location="Parika, Guyana" 
+      data-contact="--none--" 
+      data-description="Experience the vibrant shopping atmosphere at Parika Market, where you can find fresh seafood, fruits, vegetables, meats, and household goods." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31694.115663637647!2d-58.196444694694954!3d6.798485936842533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01c2eae939c43%3A0xa7e1a90d8bcc188f!2sParika%20Market%2C%20Parika!5e0!3m2!1sen!2sgy!4v1738340182831!5m2!1sen!2sgy">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPl-kXzENZ9wmUS5STtbkYQ5v-lqjXZwqKg&s" alt="Leonora Market">
+        <div class="card-content">
+          <h3>Parika Market</h3>
+          <p>Experience the vibrant shopping atmosphere at Parika Market, where you can find fresh seafood, fruits, vegetables, meats, and household goods.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+    
+
+      <!--Section 3 - Hospitals and other medical centers:-->
+      <div class="card" data-category="hospitals"
+      data-name="West Demerara Regional Hospital" 
+      data-location="Vreed en Hoop, Guyana" 
+      data-contact="+592 254 8181" 
+      data-description="West Demerara Regional Hospital has undergone significant upgrades, allowing it to provide high-quality medical care across a wide range of services. With round-the-clock availability for surgeries and an expanded range of treatments, it remains a trusted healthcare provider committed to serving the community." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6610799127384!2d-58.188052525518!3d6.811015319756483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafef81a4c6d439%3A0x11ae289634b11494!2sWest%20Demerara%20Regional%20Hospital!5e0!3m2!1sen!2sgy!4v1738353985210!5m2!1sen!2sgy">
+        <img src="https://i0.wp.com/dpi.gov.gy/wp-content/uploads/2024/09/DSC04973-oae68bfz1ha4l259i0q84swliyerujnvizvo2y7z72.jpg?resize=650%2C426&ssl=1" alt="West Demerara Regional Hospital">
+        <div class="card-content">
+          <h3>West Demerara Regional Hospital</h3>
+          <p>West Demerara Regional Hospital has undergone significant upgrades, allowing it to provide high-quality medical care across a wide range of services. With round-the-clock availability for surgeries and an expanded range of treatments, it remains a trusted healthcare provider committed to serving the community.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hospitals"
+      data-name="Parika Health Care" 
+      data-location="Parika, Guyana" 
+      data-contact="+592 260 4040" 
+      data-description="Parika Health Centre provides accessible and reliable healthcare services, focusing on minor medical cases and routine checkups. With a dedicated team of professionals, it ensures quality patient care in a comfortable and convenient setting." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.237592872607!2d-58.425992725517496!3d6.862104119136988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01c2ea150a7a7%3A0x4f10ba3fa437a8a1!2sParika%20Health%20Centre!5e0!3m2!1sen!2sgy!4v1738354070718!5m2!1sen!2sgy">
+        <img src="https://www.mhtf.org/files/2018/03/IMG_0371.jpg" alt="Parika Health Care">
+        <div class="card-content">
+          <h3>Parika Health Care</h3>
+          <p>Parika Health Centre provides accessible and reliable healthcare services, focusing on minor medical cases and routine checkups. With a dedicated team of professionals, it ensures quality patient care in a comfortable and convenient setting.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>  
+
+      <div class="card" data-category="hospitals"
+      data-name="Windsor Forest Heath Centre" 
+      data-location="Windsor Forest, Guyana" 
+      data-contact="+592 269 1120" 
+      data-description="Windsor Forest Health Centre offers essential outpatient care, family planning resources, pediatric services, and antenatal care. Open from Monday to Friday, it plays a key role in promoting health and wellness within the community." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.342799883053!2d-58.240448525517635!3d6.849447519290829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe42b81a9204b%3A0xcc510a53dfc108f4!2sWindsor%20Forest%20Health%20Centre!5e0!3m2!1sen!2sgy!4v1738354115235!5m2!1sen!2sgy">
+        <img src="https://guyanachronicle.com/wp-content/uploads/2020/06/DSC01103-300x197.jpg" alt="Windsor Forest Heath Centre">
+        <div class="card-content">
+          <h3>Windsor Forest Heath Centre</h3>
+          <p>Windsor Forest Health Centre offers essential outpatient care, family planning resources, pediatric services, and antenatal care. Open from Monday to Friday, it plays a key role in promoting health and wellness within the community.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hospitals"
+      data-name="Leguan Cottage Hospital" 
+      data-location="Blenheim, Leguan, Guyana" 
+      data-contact="+592 772 2206" 
+      data-description="Leguan Cottage Hospital provides a range of essential medical services, including X-rays, chronic disease management, and emergency care for road accident patients. Located within the Leguan Health Centre compound, it also hosts medical outreaches to ensure comprehensive healthcare for the community." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7536350511127!2d-58.39292722551727!3d6.920028418429442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8db01f8eedda53e1%3A0x389a9c06a7bf493!2sLeguan%20cottage%20hospital!5e0!3m2!1sen!2sgy!4v1738354168372!5m2!1sen!2sgy">
+        <img src="https://i0.wp.com/www.inewsguyana.com/wp-content/uploads/2023/10/Leguan-Hospital.jpg?fit=2048%2C1365&ssl=1" alt="Leguan Cottage Hospital">
+        <div class="card-content">
+          <h3>Leguan Cottage Hospital</h3>
+          <p>Leguan Cottage Hospital provides a range of essential medical services, including X-rays, chronic disease management, and emergency care for road accident patients. Located within the Leguan Health Centre compound, it also hosts medical outreaches to ensure comprehensive healthcare for the community.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="hospitals"
+      data-name="Sheriff General Hospital" 
+      data-location="Leonora, Guyana" 
+      data-contact="+592 504 3800" 
+      data-description="Sheriff General Hospital is a modern medical facility offering advanced healthcare services, including cosmetic surgery, stem cell and cancer treatment, dialysis, and pediatric care. With a 24-hour emergency unit, ICU, gynecological care, and an on-site pharmacy, it delivers high-quality medical solutions with a patient-centered approach." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.205112156564!2d-58.28690262551751!3d6.86600691908945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe1d324ed981d%3A0xb61b1b25302d47b2!2sSheriff%20General%20Hospital!5e0!3m2!1sen!2sgy!4v1738354216876!5m2!1sen!2sgy">
+        <img src="https://s1.stabroeknews.com/images/2023/04/sheriff-gen.jpg" alt="Sheriff General Hospital">
+        <div class="card-content">
+          <h3>Sheriff General Hospital</h3>
+          <p>Sheriff General Hospital is a modern medical facility offering advanced healthcare services, including cosmetic surgery, stem cell and cancer treatment, dialysis, and pediatric care. With a 24-hour emergency unit, ICU, gynecological care, and an on-site pharmacy, it delivers high-quality medical solutions with a patient-centered approach.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div> 
+
+      <div class="card" data-category="hospitals"
+      data-name="OLMAC Medical Hub" 
+      data-location="43 New Road, Vreed-en-Hoop, West Coast Demerara, Guyana" 
+      data-contact="+592 501 7573" 
+      data-description="OLMAC Medical Hub is a state-of-the-art healthcare facility offering specialized treatments, including dialysis, diabetic care, wound management, and stroke rehabilitation. In addition to urgent care, it provides medical education training, ensuring excellence in healthcare services for the community." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1112.5741131063373!2d-58.18954436737322!3d6.809104423081674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe500603750e3%3A0xfd2eb3715ea28ba!2sOLMAC%20Medical%20Hub!5e0!3m2!1sen!2sgy!4v1738472488587!5m2!1sen!2sgy">
+        <img src="https://www.thingsguyana.com/wp-content/uploads/2024/06/442405109_17945346221804091_8529557607572018497_n-854x509.jpg" alt="OLMAC Medical Hub">
+        <div class="card-content">
+          <h3>OLMAC Medical Hub</h3>
+          <p>OLMAC Medical Hub is a state-of-the-art healthcare facility offering specialized treatments, including dialysis, diabetic care, wound management, and stroke rehabilitation. In addition to urgent care, it provides medical education training, ensuring excellence in healthcare services for the community.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+
+      <!--Section 4 - Restaurants, bars and food outlets:-->
+      <div class="card" data-category="restaurants"
+      data-name="KFC" 
+      data-location="39 New Road, Vreed en Hoop, Guyana" 
+      data-contact="+592 510 4532 or +592 600 5532" 
+      data-description="KFC is popular fast-food franchise.If you don’t know where to eat, this is always a safe bet. It’s open from Monday to Sunday." 
+      data-map="ttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.43972419449!2d-58.20335980560755!3d6.808728103365106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafefb800a407f1%3A0xec6869b8de301d57!2sKFC%20Vreed-en-Hoop!5e0!3m2!1sen!2sgy!4v1738472629854!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipOWGPqqj3IJ3H31MSQaIUpM-FJNvKPsZ2x46Cj4=w408-h306-k-no" alt="KFC">
+        <div class="card-content">
+          <h3>KFC</h3>
+          <p>KFC is popular fast-food franchise.If you don’t know where to eat, this is always a safe bet. It’s open from Monday to Sunday."</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+     
+      <div class="card" data-category="restaurants"
+      data-name="Pyramid Restaurant and Pub" 
+      data-location="Windser Forest, Guyana" 
+      data-contact="+592 675 4174" 
+      data-description="Pyramid is a partially Egyptian themed restaurant, with an outdoor patio. It is positioned near the Atlantic Ocean, leading to a wonderful sea breeze especially when dining at night. Diners can choose to be seated indoors or outdoors, and can choose from both Guyanese dishes and international dishes." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.3205412140364!2d-58.24369472551759!3d6.852127219258282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe5b873bc35a1%3A0x4ef5a91f4375bdf4!2sPyramid%20Restaurant%20%26%20Pub!5e0!3m2!1sen!2sgy!4v1738472814002!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipM_nAZojY3144U_ie8QgRuHoziL5ugOYPtTaJA5=w408-h306-k-no" alt="Pyramid Restaurant and Pub">
+        <div class="card-content">
+          <h3>Pyramid Restaurant and Pub</h3>
+          <p>Pyramid is a partially Egyptian themed restaurant, with an outdoor patio. It is positioned near the Atlantic Ocean, leading to a wonderful sea breeze especially when dining at night. Diners can choose to be seated indoors or outdoors, and can choose from both Guyanese dishes and international dishes.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="restaurants"
+      data-name="Rewind Bar and Lounge" 
+      data-location="81 Papi Street New Road, Vreed En Hoop, West Coast Demerara, Guyana" 
+      data-contact="+592 670 3117" 
+      data-description="Unwind in style at Rewind Bar & Lounge, the ultimate nightlife destination. Enjoy expertly crafted cocktails, great music, and a vibrant atmosphere." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.674290170796!2d-58.19682422551792!3d6.8094155197758255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe5551f4b9a03%3A0xa9c2ee11a6bf7695!2sRewind%20Bar%20and%20Lounge!5e0!3m2!1sen!2sgy!4v1738472886802!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipPZfnIbs2_-0iyQhM769cgnh1mpnUKD4XiJcf1Q=w408-h306-k-no" alt="Rewind Bar and Lounge">
+        <div class="card-content">
+          <h3>Rewind Bar and Lounge</h3>
+          <p>Unwind in style at Rewind Bar & Lounge, the ultimate nightlife destination. Enjoy expertly crafted cocktails, great music, and a vibrant atmosphere.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+      <div class="card" data-category="restaurants"
+      data-name="Chicken ‘n’ Burger Delight" 
+      data-location="Track 'A' Junction, Vreed en Hoop, Guyana" 
+      data-contact="+592 264 3600" 
+      data-description="Chicken n Burger is a local fast food place and it is a great alternative to Popeyes and KFC. The food is always fresh and the service efficient - and great value for your money!" 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6845082894592!2d-58.18474912551791!3d6.80817781979077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafef838b4c944f%3A0x3a822d75dc96313c!2sCHICKEN%20&#39;n&#39;%20BURGER%20DELIGHT!5e0!3m2!1sen!2sgy!4v1738472951271!5m2!1sen!2sgy">
+        <img src="https://shoplocalgt.com/wp-content/uploads/2020/11/chicken-n-burger-delight-028c44b.jpg" alt="Chicken ‘n’ Burger Delight">
+        <div class="card-content">
+          <h3>Chicken ‘n’ Burger Delight</h3>
+          <p>Chicken n Burger is a local fast food place and it is a great alternative to Popeyes and KFC. The food is always fresh and the service efficient - and great value for your money!</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+      
+      <div class="card" data-category="restaurants"
+      data-name="The Tide Restaurant and Bar" 
+      data-location="116 La Jalousie, Guyana" 
+      data-contact="+592 679 9082" 
+      data-description="Enjoy a unique dining experience at The Tide Restaurant & Bar, where delicious cuisine meets a relaxed, waterfront atmosphere. Whether you're craving fresh seafood, expertly crafted cocktails, or a great night out with friends, The Tide offers the perfect blend of flavor and ambiance." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16780.558623494766!2d-58.24277426986675!3d6.850933061464034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe5cfe914f8f9%3A0xce3192cf1bdfe361!2sThe%20Tide%20Restaurant%20And%20Bar!5e0!3m2!1sen!2sgy!4v1738724039618!5m2!1sen!2sgy">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipMhcUUbfi9yrTU-zjXwTDtWZpPUedpbG9qoZszi=w408-h544-k-no" alt="The Tide Restaurant and Bar">
+        <div class="card-content">
+          <h3>The Tide Restaurant and Bar</h3>
+          <p>Enjoy a unique dining experience at The Tide Restaurant & Bar, where delicious cuisine meets a relaxed, waterfront atmosphere. Whether you're craving fresh seafood, expertly crafted cocktails, or a great night out with friends, The Tide offers the perfect blend of flavor and ambiance.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+      
+      <div class="card" data-category="restaurants"
+      data-name="Dada’s Grill" 
+      data-location="Lot 10, Block 20, Tuchen, Guyana" 
+      data-contact="+592 602 2770" 
+      data-description="Dada’s Grill is a local restaurant with great ambience, delicious local cuisine and tantalizing drinks." 
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.133014425335!2d-58.350613525517495!3d6.87466211898406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dafe1ff32268f59%3A0x22bd9ec6d51f7c8b!2sDada&#39;s%20Grill!5e0!3m2!1sen!2sgy!4v1738473105642!5m2!1sen!2sgy">
+        <img src="https://i0.wp.com/www.inewsguyana.com/wp-content/uploads/2021/04/Dada-building.jpg?resize=640%2C480" alt="Dada’s Grill">
+        <div class="card-content">
+          <h3>Dada’s Grill</h3>
+          <p>LDada’s Grill is a local restaurant with great ambience, delicious local cuisine and tantalizing drinks.</p>
+          <a href="" class="btn read-more">Read More</a>
+        </div> 
+      </div>
+
+    </div>
+  </div>
+
+  <div id="placeModel" class="model">
+    <div class="model-content">
+        <div class="model-details">
+            <span class="close">&times;</span>
+            <h2 id="modelTitle"></h2>
+            <p><strong>Location:</strong> <span id="modelLocation"></span></p>
+            <p><strong>Contact:</strong> <span id="modelContact"></span></p>
+            <p id="modelDescription"></p>
+        </div>
+        <div class="model-map">
+            <iframe 
+                id="mapFrame"
+                src=""
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const model = document.getElementById("placeModel");
+        const closeModel = document.querySelector(".close");
+        const mapFrame = document.getElementById("mapFrame");
+        const modelTitle = document.getElementById("modelTitle");
+        const modelLocation = document.getElementById("modelLocation");
+        const modelContact = document.getElementById("modelContact");
+        const modelDescription = document.getElementById("modelDescription");
+
+        document.querySelectorAll(".read-more").forEach((btn) => {
+            btn.addEventListener("click", function (event) {
+                event.preventDefault();
+                
+                const card = this.closest(".card");
+                modelTitle.textContent = card.getAttribute("data-name");
+                modelLocation.textContent = card.getAttribute("data-location");
+                modelContact.textContent = card.getAttribute("data-contact");
+                modelDescription.textContent = card.getAttribute("data-description");
+                mapFrame.src = card.getAttribute("data-map");
+
+                model.style.display = "flex";
+            });
+        });
+
+        closeModel.addEventListener("click", function () {
+            model.style.display = "none";
+            mapFrame.src = "";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target === model) {
+                model.style.display = "none";
+                mapFrame.src = "";
+            }
+        });
+    });
+    function filterBooks(category) {
+      const books = document.querySelectorAll('.card');
+
+      books.forEach(book => {
+        if (category === 'all' || book.dataset.category === category) {
+          book.style.display = 'block';
+        } else {
+          book.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-logo">
+        <img src="logoIcon.jpg" alt="">
+      </div>
+
+      <div class="footer-message">
+        <p>Thank you for our <br> tourism website. We <br> hope you enjoy the <br> beauty of the region.</p>
+      </div>
+
+      <div class="footer-services">
+        <h3>Emergency Services</h3>
+        <p><strong>Police</strong> &nbsp;&ensp;&emsp;&emsp;&emsp; 911</p>
+        <p><strong>Fire Service</strong> &emsp; 912</p>
+        <p><strong>Ambulance</strong> &nbsp;&emsp; 913</p>      
+      </div>
+      
+      <div class="footer-links">
+        <h3>Useful Links</h3>
+        <ul class="">
+          <li><a href="https://guyanabusiness.biz/index.php">Guyana Business Directory</a></li>
+          <li><a href="https://newssourcegy.com/">News Source Guyana</a></li>
+          <li><a href="https://ncnguyana.com/2023/">NCN Guyana</a></li>
+          <li><a href="https://guyanapoliceforce.gy/?page_id=1612">Guyana Police Force</a></li>
+          <li><a href="https://www.bookaridegy.com/">Book A Ride Guyana</a></li>
+        </ul>
+      </div>   
+
+    </div>
+    <div class="footer-bottom">
+      <p>CAPE &reg Information Technology Internal Assessment</p>
+  </footer>
+
+</body>
+</html>
